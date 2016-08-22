@@ -197,7 +197,6 @@ public class SensorBallSurfaceView extends SurfaceView implements SurfaceHolder.
         mRotateDegree = 20;
     }
 
-
     @Override
     public void surfaceChanged(SurfaceHolder surfaceHolder, int format, int width, int height) {
 
