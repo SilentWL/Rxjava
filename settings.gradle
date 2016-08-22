@@ -1,0 +1,1 @@
+include ':app', ':glide', ':ormlite', ':uploadfrombreak2', ':dagger', ':sensor'
