@@ -5,7 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="E:\Program Files\AndroidStudio\gradle\gradle-2.10" />
+        <option name="gradleHome" value="E:\Program Files\AndroidStudio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -13,7 +13,10 @@
             <option value="$PROJECT_DIR$/dagger" />
             <option value="$PROJECT_DIR$/glide" />
             <option value="$PROJECT_DIR$/ormlite" />
+            <option value="$PROJECT_DIR$/qqdragger" />
+            <option value="$PROJECT_DIR$/rotate3d" />
             <option value="$PROJECT_DIR$/sensor" />
+            <option value="$PROJECT_DIR$/silent_wl" />
             <option value="$PROJECT_DIR$/uploadfrombreak2" />
           </set>
         </option>
@@ -24,7 +27,10 @@
             <option value="$PROJECT_DIR$/dagger" />
             <option value="$PROJECT_DIR$/glide" />
             <option value="$PROJECT_DIR$/ormlite" />
+            <option value="$PROJECT_DIR$/qqdragger" />
+            <option value="$PROJECT_DIR$/rotate3d" />
             <option value="$PROJECT_DIR$/sensor" />
+            <option value="$PROJECT_DIR$/silent_wl" />
             <option value="$PROJECT_DIR$/uploadfrombreak2" />
           </set>
         </option>

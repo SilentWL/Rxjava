@@ -217,7 +217,6 @@ public class SensorBallSurfaceView extends SurfaceView implements SurfaceHolder.
         mRotateMatrix.setTranslate(mCircleBallX - mCircleBallRaidus, mCircleBallY - mCircleBallRaidus);
 
         setMeasuredDimension(width, height);
-
     }
 
     private static String INSTANCE = "Instance";
@@ -248,6 +247,8 @@ public class SensorBallSurfaceView extends SurfaceView implements SurfaceHolder.
             x = oritation.get(0);
             y = oritation.get(1);
             z = oritation.get(2);
+            mCircleBallX = oritation.get(3);
+            mCircleBallY = oritation.get(4);
             super.onRestoreInstanceState(bundle.getParcelable(INSTANCE));
             mViewRestore = true;
 
@@ -307,6 +308,7 @@ public class SensorBallSurfaceView extends SurfaceView implements SurfaceHolder.
         private void drawCircleBallBitmap(Canvas canvas) {
             float preX = mCircleBallX;
             float preY = mCircleBallY;
+            canvas.scale(1, -1);
             mCircleBallX = mCircleBallX - dp2px((int) x) * 2;
             mCircleBallY = mCircleBallY + dp2px((int) y) * 2;
             float l = (float) Math.sqrt((mCircleBallX - mCircleX) * (mCircleBallX - mCircleX) + (mCircleBallY - mCircleX) * (mCircleBallY - mCircleX));

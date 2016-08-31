@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="2">
+
+    <FrameLayout
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <wanglei.administrator.silent_wl.SelectImageButton
+            android:id="@+id/weixin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/weixin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:text="微信"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <wanglei.administrator.silent_wl.SelectImageButton
+            android:id="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/qq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="qq"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="14sp" />
+    </FrameLayout>
+</LinearLayout>

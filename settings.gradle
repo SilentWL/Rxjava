@@ -1,1 +1,1 @@
-include ':app', ':glide', ':ormlite', ':uploadfrombreak2', ':dagger', ':sensor'
+include ':app', ':glide', ':ormlite', ':uploadfrombreak2', ':dagger', ':sensor', ':silent_wl', ':qqdragger', ':rotate3d'

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:SensorBall="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wanglei.administrator.silent_wl.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <include layout="@layout/qrcode"
+        android:id="@+id/QRCode"/>
+
+    <include layout="@layout/info"
+        android:id="@+id/Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/QRCode"/>
+
+
+    <wanglei.administrator.silent_wl.SensorBallSurfaceView
+        android:id="@+id/Header"
+        android:layout_width="186dp"
+        android:layout_height="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        SensorBall:CircleLineWidth="1dp"
+        SensorBall:BallBitmap="@drawable/header"
+        SensorBall:BallRadius="36dp"/>
+</RelativeLayout>

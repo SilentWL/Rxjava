@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <attr name="CircleLineWidth" format="dimension"/>
+    <attr name="BallBitmap" format="reference"/>
+    <attr name="BallRadius" format="dimension"/>
+
+    <declare-styleable name="SensorBallViewAttrs">
+        <attr name="CircleLineWidth"/>
+        <attr name="BallBitmap"/>
+        <attr name="BallRadius"/>
+    </declare-styleable>
+
+    <style name="AnimationPopup">
+        <item name="android:windowEnterAnimation">@anim/pop_up_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_up_out</item>
+    </style>
+</resources>
