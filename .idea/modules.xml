@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/ormlite/ormlite.iml" filepath="$PROJECT_DIR$/ormlite/ormlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/qqdragger/qqdragger.iml" filepath="$PROJECT_DIR$/qqdragger/qqdragger.iml" />
       <module fileurl="file://$PROJECT_DIR$/rotate3d/rotate3d.iml" filepath="$PROJECT_DIR$/rotate3d/rotate3d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scroller/scroller.iml" filepath="$PROJECT_DIR$/scroller/scroller.iml" />
       <module fileurl="file://$PROJECT_DIR$/sensor/sensor.iml" filepath="$PROJECT_DIR$/sensor/sensor.iml" />
       <module fileurl="file://$PROJECT_DIR$/silent_wl/silent_wl.iml" filepath="$PROJECT_DIR$/silent_wl/silent_wl.iml" />
       <module fileurl="file://$PROJECT_DIR$/silent_wl/silent_wl@qq.com.iml" filepath="$PROJECT_DIR$/silent_wl/silent_wl@qq.com.iml" />

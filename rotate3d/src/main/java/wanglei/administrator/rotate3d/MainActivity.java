@@ -12,31 +12,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     private GestureDetector mGestureDetector;
     private ImageView mImageView1;
     private ImageView mImageView2;
-    @Override
-    public boolean onSingleTapConfirmed(MotionEvent motionEvent) {
-        return false;
-    }
 
-    @Override
-    public boolean onDoubleTapEvent(MotionEvent motionEvent) {
-
-        Rotate3dAnimation rotation = new Rotate3dAnimation(
-                0,
-                720,
-                mImageView1.getWidth() / 2,
-                mImageView1.getHeight() / 2, 600, false);
-        rotation.setInterpolator(new OvershootInterpolator());
-        rotation.setDuration(1000);
-
-        mImageView1.startAnimation(rotation);
-        return false;
-    }
-
-    @Override
-    public boolean onDoubleTap(MotionEvent motionEvent) {
-
-        return false;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +24,34 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         mImageView2 = (ImageView) findViewById(R.id.im2);
     }
 
+    @Override
+    public boolean onSingleTapConfirmed(MotionEvent motionEvent) {
+        return false;
+    }
 
+    @Override
+    public boolean onDoubleTapEvent(MotionEvent motionEvent) {
+        Rotate3dAnimation rotation = new Rotate3dAnimation(
+                0,
+                720,
+                mImageView1.getWidth() / 2,
+                mImageView1.getHeight() / 2, 666, true);
+        rotation.setInterpolator(new OvershootInterpolator());
+        rotation.setDuration(1000);
+        if (mImageView1.getY() + mImageView1.getHeight() >= motionEvent.getY()) {
+
+            mImageView1.startAnimation(rotation);
+        }else {
+            mImageView2.startAnimation(rotation);
+        }
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent motionEvent) {
+
+        return false;
+    }
     @Override
     public boolean onDown(MotionEvent motionEvent) {
         return false;
